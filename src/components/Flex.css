@@ -1,7 +1,7 @@
 .flex-container {
   background-color: #457b9d;
   padding: 10px;
-  width: 700px;
+  width: 500px;
   min-height: 450px;
 }
 
@@ -15,7 +15,9 @@
 .buttons {
   margin-top: 1rem;
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
+  max-width: 600px;
 }
 
 .btn {
@@ -44,4 +46,62 @@
 
 .btn:active {
   transform: translateY(-1px);
+}
+
+/* FOR FLEX PROPERTIES */
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-start {
+  justify-content: flex-start;
+}
+
+.justify-content-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.align-items-stretch {
+  align-items: stretch;
+}
+
+.align-items-baseline {
+  align-items: baseline;
 }
